@@ -1,0 +1,15 @@
+/.idea/
+/node_modules/
+/out/
+/target/
+
+/*.iml
+/*.ipr
+/*.iws
+
+npm-debug.log
+package-lock.json
+
+.DS_Store
+
+yarn.lock

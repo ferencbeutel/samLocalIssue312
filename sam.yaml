@@ -1,0 +1,29 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  TestBinary:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: test.getBinary
+      Runtime: nodejs6.10
+      Timeout: 100
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /getBinary
+            Method: get
+
+  TestBase64:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: test.getBase64
+      Runtime: nodejs6.10
+      Timeout: 100
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /getBase64
+            Method: get
